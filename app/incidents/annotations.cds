@@ -47,7 +47,7 @@ annotate service.Incidents with @(
         {
             $Type : 'UI.DataField',
             Value : customer.name,
-            Label : 'Name',
+            Label : '{i18n>Name}',
         },
         {
             $Type : 'UI.DataField',
@@ -79,7 +79,7 @@ annotate service.Incidents with @(
             Value : title,
         },
         TypeName : '',
-        TypeNamePlural : '',
+        TypeNamePlural : '{i18n>Incidents}',
         Description : {
             $Type : 'UI.DataField',
             Value : customer.name,
@@ -105,11 +105,12 @@ annotate service.Incidents with @(
             {
                 $Type : 'UI.DataField',
                 Value : title,
+                Label : '{i18n>Title}',
             },
             {
                 $Type : 'UI.DataField',
                 Value : customer_ID,
-                Label : 'Customer',
+                Label : '{i18n>Customer}',
             },
         ],
     },
