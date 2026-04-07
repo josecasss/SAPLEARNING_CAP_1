@@ -10,6 +10,8 @@ service ProcessorService {
     entity Customers as projection on my.Customers; //Solo lectura para Customers, no se pueden modificar desde este servicio
 }
 
+annotate ProcessorService.Incidents with @odata.draft.enabled : true; //Habilita el modo draft para la entidad Incidents en el servicio ProcessorService
+
 /**
  * Service used by administrators to manage customers and incidents.
  */
